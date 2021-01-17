@@ -1,0 +1,28 @@
+//== reset style for all elements ==//
+//== start ==//
+*{
+    box-sizing: border-box;
+}
+//== end ==//
+
+//== declare color variables in root ==//
+//== start ==//
+:root{
+    --color1: hsl(237, 18%, 59%);
+    --color2: hsl(345, 95%, 68%);
+    --color3: hsl(0, 0%, 100%);
+    --color4: hsl(236, 21%, 26%);
+    --color5: hsl(235, 16%, 14%);
+    --color6: hsl(234, 17%, 12%);
+}
+//== end ==//
+
+//== control font of the body ==//
+//== start ==//
+body{
+    font-size: 14px;
+    font-family: 'Red Hat Text', sans-serif;
+}
+//== end ==//
+
+//////////////////////
