@@ -1,41 +1,41 @@
 <template>
   <div id="complete-timer-pieces">
     <div class="d-flex algin-items-center justify-content-center">
-      <div class="mr-4">
+      <div class="mr-4" style="position:relative">
         <div class="days">
           <!-- create Timer Dom area -->
           <!-- start -->
           <div class="counter-con"></div>
           <!-- end -->
         </div>
-        <div>Days</div>
+        <div class="sub">Days</div>
       </div>
-      <div class="mr-4">
+      <div class="mr-4" style="position:relative">
         <div class="hours">
           <!-- create Timer Dom area -->
           <!-- start -->
           <div class="counter-con"></div>
           <!-- end -->
         </div>
-        <div>Hours</div>
+        <div class="sub">Hours</div>
       </div>
-      <div class="mr-4">
+      <div class="mr-4" style="position:relative">
         <div class="minutes">
           <!-- create Timer Dom area -->
           <!-- start -->
           <div class="counter-con"></div>
           <!-- end -->
         </div>
-        <div>minutes</div>
+        <div class="sub">minutes</div>
       </div>
-      <div>
+      <div style="position:relative">
         <div class="seconds">
           <!-- create Timer Dom area -->
           <!-- start -->
           <div class="counter-con"></div>
           <!-- end -->
         </div>
-        <div>seconds</div>
+        <div class="sub">seconds</div>
       </div>
     </div>
   </div>
@@ -189,6 +189,21 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+//== sub style ==//
+.sub{
+  color: var(--color3);
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 10px;
+  letter-spacing: 3px;
+}
+
+//== completes-timer-pieces media ==//
+//== start ==//
 @media screen and (max-width: 800px){
   #complete-timer-pieces{
     transform: scale(0.95);
@@ -249,4 +264,5 @@ export default {
     transform: scale(0.34);
   }
 }
+//== end ==//
 </style>
